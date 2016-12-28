@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h3.
+        Students
+    ul
+        each student, i in members
+                li#member_list_item
+                    a(hred="#") #{student.name}
+  p Welcome to #{title}

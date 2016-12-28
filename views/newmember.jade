@@ -1,0 +1,11 @@
+extend layout
+
+block content
+    h3= title
+    form#form_add_member(name="addmember", method="post", action="/member")
+        span name
+        span &nbsp;
+        input#input_name(type="text", placeholder="Name", name="name")
+        br
+        br
+        button#submit_member(type="submit") submit
